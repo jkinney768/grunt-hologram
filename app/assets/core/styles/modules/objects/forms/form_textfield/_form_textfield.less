@@ -1,0 +1,88 @@
+/*
+  ## Form Inputs Textfield
+
+Code examples of form fields
+
+```
+    <label for="textField" class="form__label">Form Field Label</label>
+    <input id="textField" class="form__input form__input--textfield" type="text">
+
+```
+*/
+
+.form__input {
+	.borderRadius(3px);
+    .boxSizing();
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+	color: @grey--x6;
+	cursor: auto;
+	font: 1rem/20px @brandFont;
+	height: 40px; /* is this needed? */
+    margin: 0;
+    padding: 6px 12px;
+	/*width: 100%;*/
+    border: 1px solid #cccccc;	
+}
+
+.form__input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+       -moz-box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+            box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/*
+  ## Form Inputs Textbox
+
+Code examples of form fields
+
+```
+
+    <textarea id="textArea1" class="form__input form__input--textarea" name="textAreaText"></textarea>
+
+```
+*/
+
+.form__input--textarea {
+    overflow: auto;
+    resize: none;
+    min-height: 100px;
+}
+
+/*
+  ## Form Input Currency
+
+Code examples of form fields
+
+```
+    <div class="form__currency">
+        <input id="currency" class="form__input form__input--textfield" type="number">
+    </div>
+
+```
+*/
+
+.form__currency {
+    position: relative;
+}
+
+.form__currency:before {
+    display: block;
+    content: '$';
+    background: #ffffff;
+    text-align: center;
+    font-family: @brandFont;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.form__currency > * {
+    margin-left: 25px;
+    /*width: 95%;*/
+}

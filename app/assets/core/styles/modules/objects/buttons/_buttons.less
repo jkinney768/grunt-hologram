@@ -1,0 +1,71 @@
+/*
+  ## Primary Button
+
+Code examples of primary button styles
+
+```
+    <a href="#" class="btn">Primary Button</a>
+
+```
+*/
+
+.btn {
+    background: @brandColor;
+	color: #ffffff;
+	font: 1rem @brandFont;
+    .borderRadius(3px);
+	padding: 6px 20px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid transparent;
+    text-decoration: none;
+	.userSelect;	
+}
+	
+.btn:hover {
+    background: @brandColor--bright;
+    color: #ffffff;
+}
+
+/*
+  ## Active State
+
+Code examples of primary button active styles
+
+```
+    <a href="#" class="btn btn--isActive">Active Button</a>
+```
+*/
+
+.btn--isActive,
+.btn:active {
+    background: @brandColor--bright;
+	-webkit-box-shadow: inset 2px 2px 4px rgba(207, 16, 45, 0.25);
+       -moz-box-shadow: inset 2px 2px 4px rgba(207, 16, 45, 0.25);
+	box-shadow: inset 2px 2px 4px rgba(207, 16, 45, 0.25);
+}
+
+/*
+  ## Disabled Button
+
+Code examples of primary button disabled styles
+
+```
+
+    <a href="#" class="btn btn--isDisabled" disabled>Disabled Button</a>
+```
+*/
+
+.btn--isDisabled {
+    background: #ededed;
+    background: @brandColor--muted;
+    color: @grey--x4;
+}
+
+.btn--isDisabled:hover,
+.btn--isDisabled:active {
+    cursor: default;
+    background: @brandColor--muted;
+    box-shadow: none;
+    color: @grey--x4;
+}

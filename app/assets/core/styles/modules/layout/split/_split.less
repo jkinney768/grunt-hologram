@@ -1,0 +1,39 @@
+/*
+  ## Split Layout
+
+Code examples of split layout
+
+```
+   <div class="split">
+		<div class="split__left">
+			Left Content
+		</div>
+		
+		<div class="split__right">
+			Right Content
+		</div>
+	</div>  
+
+```
+*/
+
+.split {
+	margin: 6px 0;
+    .clearfix();
+}
+
+.split--trim {
+    margin-top: 15px;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.split__left {
+    float: left;
+}
+
+.split__right {
+    float: right;
+	text-align: right;
+}

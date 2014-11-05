@@ -1,0 +1,26 @@
+/*
+  ## Horizontal Lists
+
+Code examples of horizontal list styles
+
+```
+    <ul class="hList">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+
+```
+*/
+
+.hList {
+    .clearfix();
+}
+
+.hList > * {
+    float: left;
+}
+
+.hList > * + * {
+    margin-left: 20px;
+}

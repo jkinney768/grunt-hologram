@@ -1,0 +1,42 @@
+/*
+  ## Vertical Lists
+
+Code examples of vertical list styles
+
+```
+    <ul class="vList">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+
+```
+*/
+
+/*
+  ## Vertical List Piped
+
+
+```
+    <ul class="vList vList--piped">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+
+```
+*/
+
+.vList > * + * {
+    margin-top: 25px;
+}
+
+.vList--piped > * + * {
+    border-top: 1px solid @grey--x3;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.vList--tight > * + * {
+    margin-top: 0;
+}

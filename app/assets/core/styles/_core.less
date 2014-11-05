@@ -1,0 +1,48 @@
+/**
+ * @auth: Allstate UX Engineers
+ * @desc: Used to Include Needed UI Componenets
+ * 
+ */
+
+/**
+ * This is the Basis main application compile file:
+ *
+ * 1) Imports for styles targeted to all screens
+ * 2) Small Viewport Imports - 560px
+ * 3) Medium Viewport Imports - 768px
+ * 4) Wide Screen Imports - 960px
+ * 5) Huge Screen Imports - 1600px
+ */
+
+
+/* [1] Imports for styles targeted to all screens
+   ========================================================================== */
+@import '_screen.less';
+
+
+/* [2] Imports for styles targeted to narrow screens - 35em (560px)
+   ========================================================================== */
+
+@media screen and (max-width: @breakpoint--narrow) {
+    @import '_screen--narrow.less';
+}
+
+/* [3] Imports for styles targeted to all screens - 48em (768px)
+   ========================================================================== */
+@media screen and (max-width: @breakpoint--mid) {
+    @import '_screen--mid.less';
+}
+
+
+/* [4] Imports for styles targeted to wide screens screens - 60em (960px)
+   ========================================================================== */
+@media screen and (max-width: @breakpoint--wide) {
+    @import '_screen--wide.less';
+}
+
+
+/* [5] Imports for styles targeted to wide screens screens - 100em (1600px)
+   ========================================================================== */
+@media screen and (max-width: @breakpoint--huge) {
+    @import '_screen--huge.less';
+}

@@ -1,0 +1,75 @@
+/*
+  ## Checkboxes
+
+Code and visual example of custom checkboxes
+
+```
+    <input class="form__checkbox" type="checkbox" value="" name="checkbox" id="checkbox">
+    <label class="form__checkboxLabel" for="checkbox">Checkbox</label>
+
+    <input class="form__checkbox form__checkbox--error" type="checkbox" value="" name="checkboxError" id="checkboxError">
+    <label class="form__checkboxLabel" for="checkboxError">Checkbox Error</label>
+    
+```
+*/
+
+.form__checkboxLabel {
+    display: inline-block;
+    padding: 8px 8px 8px 39px;	
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Allstate Sans Regular', Arial;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: @grey--x6;
+    text-align: left;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.form__checkboxLabel:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid @grey--x4;
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.4);
+    .borderRadius(3px);
+    top: 10px;
+    left: 6px; 
+}
+
+.form__checkbox {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+.form__checkbox:focus + .form__checkboxLabel:before {
+    outline: #66afe9;
+    box-shadow: 0 0 8px rgba(102,175,233,0.6),
+                inset 0px 1px 3px rgba(0,0,0,0.4);
+}
+
+.form__checkbox:checked + .form__checkboxLabel:before,
+.form__checkboxLabel:hover:before {
+    border: 1px solid #1666af;
+}
+
+.form__checkbox:checked + .form__checkboxLabel:before {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: center center;
+}
+
+.form__checkbox--error + .form__checkboxLabel:before {
+    border: 2px solid @color--error;
+}

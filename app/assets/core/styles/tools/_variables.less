@@ -1,0 +1,137 @@
+/**
+ * @auth: Allstate UX Engineers
+ * @desc: Global default variables for typopgraphy, colors, et al.
+ * @file: styles/basis/defaultVariables.less
+ * 
+ */
+
+/**
+ * This is the Basis default variables. Please do not overwrite variables in this file.
+ * Look to make these changes under the theme/themeVariables.less. 
+ *
+ * TODO: better comments
+ * 1) Base global colors.
+ * 2) Typography (sizes, families, weights)
+ * 3) Breakpoints (RWD specifics)
+ * 4) 
+ * 5)
+ * 6)
+ *   
+ */
+
+
+/* [1] Colors
+   ========================================================================== */
+	
+	
+    /* TEMP Button colors - these need to be streamlined and clarified */
+    @brandColor: #1666af;
+    @brandColor--bright: #0096d6;
+    @brandColor--muted: #ededed;
+
+
+    // /* Primary Colors */
+	@color--primary:   #004A88;
+	@color--secondary: #1666AF;
+	@color--highlight: #0096D6;
+	@color--muted: 	   #DAECF3;
+    @color--error: #cf102d;
+    @color--success: #49882c;
+
+	// /* Common colors */
+	// @color__text: 		   #444;
+	// @color__text--alt:     #fff;
+	// @color__text--inverse: #ddd;
+	// @color__background:    #fff;
+	// @color__border: 	   #ddd;
+
+	// /* Links */
+	// @color__link--default:  #000;
+	// @color__link--visited:  #000;
+	// @color__link--hover:    #ddd;
+	// @color__link--active:   #ddd;
+
+	// /* Code */
+	// @color__code: 			  #333;
+	// @color__code__background: #f3f3f3;
+	// @color__pre:			  #d4d4d4;
+	// @color__pre__background:  #333;
+
+	// /* Selections */
+	// @color__selection: #b3d4fc;
+
+	// /* Messages */
+	// @color--message:   #f4ecbb;
+	@color--success:   #72B325;
+	// @color--warning:   #cf8600;
+	@color--important: #CF102D;
+	// @color--notice:    #66b;
+
+    /* Grey Scales */
+    @gray--x1: #F5F5F5;
+    @grey--x2: #EDEDED;
+    @grey--x3: #CCCCCC;
+    @grey--x4: #999999;
+    @grey--x5: #666666;
+    @grey--x6: #333333;
+
+
+/* [2] Typography
+   ========================================================================== */
+
+	/* Font Sizes */
+	@baseFontSize:   16;
+	@baseLineHeight: 24;
+	@base-fs: @baseFontSize;   /* shorthand for re-use */
+	@base-lh: @baseLineHeight; /* shorthand for re-use */
+
+    @brandFont: 'Allstate Sans Regular', Arial, sans-serif;
+    @brandFont--bold: 'Allstate Sans Bold';
+    @defaultFont: Arial, Helvetica, sans-serif;
+
+	/* Font Variants */
+	@fontFamily--sans:      "Helvetica Neue", Arial, sans-serif;
+	@fontFamily--serif: 	Georgia, serif;
+	@fontFamily--display:   "Helvetica Neue", sans-serif;
+	@fontFamily--caption:   Verdana, sans-serif;
+	@fontFamily--monospace: "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace;
+	@fontFamily--default: 	@fontFamily--sans;
+
+
+
+
+	/* Font Variants */
+	@fontWeight--light:    200;
+	@fontWeight--normal:   400;
+	@fontWeight--semibold: 700;
+	@fontWeight--bold: 	   900;
+
+
+
+/* [3] Breakpoints
+   ========================================================================== */
+
+	@breakpoint--narrow: 35em; 	  /* 560px */
+	@breakpoint--mid: 	 48em;    /* 768px */
+	@breakpoint--wide: 	 60em;    /* 960px */
+	@breakpoint--huge: 	 100em;   /* 1600px */
+
+
+
+/* [4] Buttons (Needs refactoring)
+   ========================================================================== */
+	@primaryButton_background: #1666af;
+	@PrimaryButton_color: #ffffff;
+	@PrimaryButton_fontWeight: normal;
+	@PrimaryButton_fontFamily: 'Allstate Sans Regular', Arial;
+	@PrimaryButton_fontSize: 1rem;
+	@PrimaryButton_cornerRadius: 3px;
+
+
+	@primaryButton__hover__background: #0096d6;
+
+	@primaryButton__active__background: #0096d6;
+
+	@PrimaryButton__disabled__backgroundColor: #ededed;
+	@PrimaryButton__disabled__color: #999999;
+

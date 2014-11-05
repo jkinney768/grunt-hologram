@@ -1,0 +1,22 @@
+{
+  "name": "BasisUI",
+  "version": "1.0.0",
+  "description": "A starter kit for Allstates common UI",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-hologram": "0.0.4"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Allstate",
+    "User",
+    "Experience"
+  ]
+}
